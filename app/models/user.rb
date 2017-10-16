@@ -2,6 +2,7 @@ require 'bcrypt'
 
 class User < ActiveRecord::Base
   # Remember to create a migration!
+  # Is linked to the recipes that the user has liked.
   has_many :recipes
   
   
